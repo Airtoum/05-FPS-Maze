@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="FreezeEnemy" type="Spatial"]
+
+[node name="CSGCombiner" type="CSGCombiner" parent="."]
+
+[node name="CSGBox" type="CSGBox" parent="CSGCombiner"]
+
+[node name="CSGBox" type="CSGBox" parent="."]
