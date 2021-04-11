@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BigDoor.obj-76afc22c169743816198d5c49981c589.mesh"
+
+[deps]
+
+files=[ "res://.import/BigDoor.obj-76afc22c169743816198d5c49981c589.mesh" ]
+
+source_file="res://Tiles/BigDoor.obj"
+dest_files=[ "res://.import/BigDoor.obj-76afc22c169743816198d5c49981c589.mesh", "res://.import/BigDoor.obj-76afc22c169743816198d5c49981c589.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

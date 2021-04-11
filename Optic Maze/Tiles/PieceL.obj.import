@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/PieceL.obj-42a312a10df4f92d3f25b6fba0dac099.mesh"
+
+[deps]
+
+files=[ "res://.import/PieceL.obj-42a312a10df4f92d3f25b6fba0dac099.mesh" ]
+
+source_file="res://Tiles/PieceL.obj"
+dest_files=[ "res://.import/PieceL.obj-42a312a10df4f92d3f25b6fba0dac099.mesh", "res://.import/PieceL.obj-42a312a10df4f92d3f25b6fba0dac099.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

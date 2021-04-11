@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://LightOrb.png" type="Texture" id=1]
+[ext_resource path="res://Billboard.gd" type="Script" id=2]
+[ext_resource path="res://FlipRandomly.gd" type="Script" id=3]
+
+[node name="VisitedLight" type="OmniLight"]
+light_bake_mode = 2
+script = ExtResource( 2 )
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform( 0.07, 0, 0, 0, 0.07, 0, 0, 0, 0.07, 0, 0, 0 )
+flip_h = true
+texture = ExtResource( 1 )
+script = ExtResource( 3 )

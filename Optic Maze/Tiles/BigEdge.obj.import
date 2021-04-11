@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BigEdge.obj-2c76d8867975830e676fe7172dea8f9e.mesh"
+
+[deps]
+
+files=[ "res://.import/BigEdge.obj-2c76d8867975830e676fe7172dea8f9e.mesh" ]
+
+source_file="res://Tiles/BigEdge.obj"
+dest_files=[ "res://.import/BigEdge.obj-2c76d8867975830e676fe7172dea8f9e.mesh", "res://.import/BigEdge.obj-2c76d8867975830e676fe7172dea8f9e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

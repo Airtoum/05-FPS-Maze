@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/BigCorner.obj-43e312fb5856533a25e838f7a6e46a8b.mesh"
+
+[deps]
+
+files=[ "res://.import/BigCorner.obj-43e312fb5856533a25e838f7a6e46a8b.mesh" ]
+
+source_file="res://Tiles/BigCorner.obj"
+dest_files=[ "res://.import/BigCorner.obj-43e312fb5856533a25e838f7a6e46a8b.mesh", "res://.import/BigCorner.obj-43e312fb5856533a25e838f7a6e46a8b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
