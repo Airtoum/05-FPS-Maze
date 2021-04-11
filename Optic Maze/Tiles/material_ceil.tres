@@ -2,6 +2,5 @@
 
 [resource]
 resource_name = "Ceil"
-flags_transparent = true
-albedo_color = Color( 0.309804, 0.396078, 0.8, 0.0627451 )
+albedo_color = Color( 0.560784, 0.623529, 0.909804, 1 )
 metallic = 0.5

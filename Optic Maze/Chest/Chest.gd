@@ -12,4 +12,9 @@ func _ready():
 func _on_Chest_body_entered(body):
 	if body == player:
 		player.score += 10
-		queue_free()
+		visible = false
+		$AudioStreamPlayer3D.play()
+
+
+func _on_AudioStreamPlayer3D_finished():
+	queue_free()

@@ -1,9 +1,26 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://FreezeEnemy/freezeenemy.glb" type="PackedScene" id=1]
+[ext_resource path="res://FreezeEnemy/FreezeEnemy.gd" type="Script" id=2]
+[ext_resource path="res://FreezeEnemy/FreezeEnemyAttack.wav" type="AudioStream" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.4, 0.4, 0.4 )
 
 [node name="FreezeEnemy" type="Spatial"]
+script = ExtResource( 2 )
 
-[node name="CSGCombiner" type="CSGCombiner" parent="."]
+[node name="freezeenemy" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.33, 0, 0, 0, 0.33, 0, 0, 0, 0.33, 0, 0, 0 )
 
-[node name="CSGBox" type="CSGBox" parent="CSGCombiner"]
+[node name="VisibilityKinematicBody" type="KinematicBody" parent="."]
 
-[node name="CSGBox" type="CSGBox" parent="."]
+[node name="CollisionShape" type="CollisionShape" parent="VisibilityKinematicBody"]
+shape = SubResource( 1 )
+
+[node name="VisibilityNotifier" type="VisibilityNotifier" parent="."]
+aabb = AABB( -0.4, -0.4, -0.4, 0.8, 0.8, 0.8 )
+
+[node name="AttackSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = 5.0

@@ -37,7 +37,7 @@ func _process(_delta):
 	$Gold.text = str(score) + " COINS"
 
 func _physics_process(delta):
-	is_dead = health <= 0
+	is_dead = health <= 0 or translation.y < -50
 	if is_dead:
 		death_timer += delta
 		if death_timer >= 1.8:
