@@ -13,6 +13,7 @@ func _on_Chest_body_entered(body):
 	if body == player:
 		player.score += 10
 		visible = false
+		$CollisionShape.disabled = true
 		$AudioStreamPlayer3D.play()
 
 
