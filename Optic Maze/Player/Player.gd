@@ -5,6 +5,7 @@ onready var VisitedLight = load("res://VisitedLight.tscn")
 onready var global = get_node("/root/Global")
 onready var gridmap = get_node("/root/Game/GridMap")
 onready var eyes = $Eyes
+onready var exit = get_node("/root/Game/Exit")
 
 var move_speed = 3
 var jump_speed = 6
@@ -59,8 +60,10 @@ func _physics_process(delta):
 			get_parent().get_node("VisitedLights").add_child(visitedlight)
 			visitedlight.translation = gridmap.map_to_world(grid_pos.x, grid_pos.y, grid_pos.z)
 			visitedlight.translation.y += 1.6
+	if (exit.global_transform.origin - global_transform.origin).length() < 5:
+		get_tree().change_scene("res://UI/YouWin.tscn")
 
-func _unhandled_input(event):
+func _input(event):
 	if event is InputEventMouseMotion:
 		$Eyes.rotate_x(y_inversion_scale * event.relative.y * mouse_sensitivity)
 		rotate_y(-event.relative.x * mouse_sensitivity)

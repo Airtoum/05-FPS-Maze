@@ -1,0 +1,111 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/Pause.png" type="Texture" id=1]
+[ext_resource path="res://UI/PauseScreen.gd" type="Script" id=2]
+
+[node name="PauseScreen" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Resume" type="Button" parent="."]
+margin_left = 322.0
+margin_top = 135.0
+margin_right = 702.0
+margin_bottom = 185.0
+text = "Resume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InputForward" type="Button" parent="."]
+margin_left = 322.0
+margin_top = 205.0
+margin_right = 502.0
+margin_bottom = 255.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InputBack" type="Button" parent="."]
+margin_left = 522.0
+margin_top = 205.0
+margin_right = 702.0
+margin_bottom = 255.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InputLeft" type="Button" parent="."]
+margin_left = 322.0
+margin_top = 275.0
+margin_right = 502.0
+margin_bottom = 325.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InputRight" type="Button" parent="."]
+margin_left = 522.0
+margin_top = 275.0
+margin_right = 702.0
+margin_bottom = 325.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InputJump" type="Button" parent="."]
+margin_left = 322.0
+margin_top = 345.0
+margin_right = 502.0
+margin_bottom = 395.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InputEyes" type="Button" parent="."]
+margin_left = 522.0
+margin_top = 345.0
+margin_right = 702.0
+margin_bottom = 395.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 322.0
+margin_top = 415.0
+margin_right = 702.0
+margin_bottom = 465.0
+text = "Return to Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 803.101
+margin_top = 569.78
+margin_right = 1007.1
+margin_bottom = 583.78
+text = "Press and hold ESC to terminate"
+[connection signal="pressed" from="Resume" to="." method="_on_Resume_pressed"]
+[connection signal="pressed" from="InputForward" to="." method="_on_InputForward_pressed"]
+[connection signal="pressed" from="InputBack" to="." method="_on_InputBack_pressed"]
+[connection signal="pressed" from="InputLeft" to="." method="_on_InputLeft_pressed"]
+[connection signal="pressed" from="InputRight" to="." method="_on_InputRight_pressed"]
+[connection signal="pressed" from="InputJump" to="." method="_on_InputJump_pressed"]
+[connection signal="pressed" from="InputEyes" to="." method="_on_InputEyes_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
